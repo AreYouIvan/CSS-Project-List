@@ -20,6 +20,7 @@ main {
     justify-content: center;
     justify-self: center;
     border: solid 1px red;
+    font-size: auto;
 }
 section {
     /* border: solid 1px red ; */
