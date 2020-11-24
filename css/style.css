@@ -73,7 +73,7 @@ img {
     margin: 0;
 }
 #list { /* propiedades de texto y tamaño en la caja list */
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: initial !important; /* quitar subrayado de anchor (didn't works) */
     color: rgb(112, 112, 112);
     padding-left: 50px; /* padding para acomodar el texto */
