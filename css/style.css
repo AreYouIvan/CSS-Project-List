@@ -1,73 +1,57 @@
 body {
-    background-color: darkslategrey;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    background-color: darkslategrey; /* Agregando fondo a toda la pagina desde un parent tag */
+    margin: 0; /* Quitar los margenes siempre sirve para evitar problemas de posiciones */
+    padding: 0; /* En body no hace falta agregar un padding */
+    display: flex; /* Habilité flex box para poder mover las cajas entre si */
+    justify-content: center; /* Centré el proyecto desde la parent tag */
 }
 
 main {
-    font-family: helvetica;
-    color: whitesmoke;
+    font-family: helvetica; /* Tipografia */
+    color: whitesmoke; /* Color de tipografia */
     /* border: solid 1px red ; */
-    background-color: teal;
-    border-radius: 30px; 
-    height: auto;
-    width: 50%;
-    margin: 5px 100px 0px 100px;
+    background-color: teal; /* Agregué el color de la caja de la lista */
+    border-radius: 30px; /* Bordes redondeados para el diseño */
+    height: auto; /* La altura se establece automaticamente 
+                    para conforme aumente o disminuya el contenido */
+    width: 50%; /* El ancho del proyecto corresponde al 50% de la caja "body" */
+    /* margin: 5px 100px 0px 100px; */ /* Agregué margin para centrar el contenido pero es una 
+                                        mala practica si queremos que nuestro diseño sea   
+                                        un poco mas responsivo */
     padding: 0, 0, 0, 0;
-    box-shadow: 10px 20px 30px #000000;
-    justify-content: center;
-    justify-self: center;
-    border: solid 1px red;
-    font-size: auto;
+    box-shadow: 10px 20px 30px #000000; /* Agregué sombre a la caja 
+                                            principal para embellecer el diseño */
 }
-section {
+section { /* Aqui esta el contenido imagenes y texto */
     /* border: solid 1px red ; */
-    margin: 0, 0, 0, 20px;
-    padding: 0, 0, 0, 200px;
-    display: inline-block;
-    border: solid 1px red;
-
+    /* display: inline-block;*/ 
 }
 
 #boxgroceries {
-    border: 1px solid red;
-    display: flex;
+    display: flex; /* Habilitando flex box para colocar las imagenes y el texto en paralelo */
+    padding: 10px; /* padding es para separar el contenido de la caja */
 }
 
 figure {
-    /* box-shadow: 0 0 2px 1px rgb(0, 140, 186, 0.5); */
-    /* background: seashell; */
-    justify-items: left;
-    display: flex;
-    max-height: auto;
-    margin: 4px;
-    width: 60%;
-    height: 60%;
-    border: 1px solid red;
+    /* max-height: auto; */
+    margin: 4px; /* margen para separar un poco las magenes de los bordes de cajas */
+    width: 60%; /* Estableciendo las dimensiones de la caja figure que contiene imagenes */
+    height: 60%; /* Estableciendo las dimensiones de la caja figure que contiene imagenes */
+    padding: 10px;
 }
-
-#hover  {
-    width: 70%;
-    height: auto;
-    border: 1px solid red;
-    margin: 0;
-    box-shadow: box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);    
-}
-
 
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%; /* Esto funciona para hacer imagenes responsivas */
+    height: auto;   /* Esto funciona para hacer imagenes responsivas */
     padding: 4px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-
+    border: 1px solid rgb(170, 170, 170); /* Agregando bordes para decoracion fotografica */
+    border-radius: 6px; /* Agregando bordes para decoracion fotografica */
+    background: #ddd;   /* Agregando bordes para decoracion fotografica */
+    box-shadow: 1px 1px 5px #424242; /* La sombre siempre embellece el diseño */
 }
 
 
-#title {
+#title { /* Añadiendo propiedades del titulo de la pagina */
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -75,26 +59,33 @@ img {
     
 
 }
-#subtitle {
+#subtitle { /* añadiendo propiedades de tamaño y estilo de fuentes */
     font-size: 25px;
     color: whitesmoke;
     padding-left: 30px;
     justify-content: center;
-    border: solid 1px red;
     height: auto;
-    width: 20%;
-    list-style-type: none;
+    width: 20%; /* El tamañao de la caja corresponde al 20% de la caja #boxgroceries */
+    list-style-type: none; /* Este atributo quita los bullets de la lista */
     margin: 0;
 }
-#list {
+#list { /* propiedades de texto y tamaño en la caja list */
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: initial !important; /* quitar subrayado de anchor (didn't works) */
     color: whitesmoke;
-    padding-left: 50px;
-    justify-content: right;
+    padding-left: 50px; /* padding para acomodar el texto */
+    padding-top: 15px;
     height: auto;
-    width: 40%;
-    border: solid 1px red;
+    width: 30%;
     /* display: block; */
     margin: 0;
+    text-align: left; /* posicion de texto */
+    
 }
+
+a {
+    text-decoration: none;
+    color: whitesmoke
+    
+}
+
