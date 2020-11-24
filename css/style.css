@@ -1,16 +1,19 @@
 body {
-    background-color: darkslategrey; /* Agregando fondo a toda la pagina desde un parent tag */
+    background-color: rgba(61, 35, 0, 0.658); /* Agregando fondo a toda la pagina desde un parent tag */
     margin: 0; /* Quitar los margenes siempre sirve para evitar problemas de posiciones */
-    padding: 0; /* En body no hace falta agregar un padding */
+    padding-top: 15px; /* En body no hace falta agregar un padding */
     display: flex; /* Habilité flex box para poder mover las cajas entre si */
     justify-content: center; /* Centré el proyecto desde la parent tag */
+
 }
 
 main {
     font-family: helvetica; /* Tipografia */
-    color: whitesmoke; /* Color de tipografia */
+    color: rgb(59, 59, 59); /* Color de tipografia */
     /* border: solid 1px red ; */
-    background-color: teal; /* Agregué el color de la caja de la lista */
+    background-color: rgb(228, 228, 228); /* Agregué el color de la caja de la lista */
+    background-image: url(https://st.depositphotos.com/2850099/4441/v/950/depositphotos_44412173-stock-illustration-white-squared-paper-seamless-sheet.jpg);
+    background-size: 200px; /* se coloca un img de bg y se modifica su tamaño y su repeticion */
     border-radius: 30px; /* Bordes redondeados para el diseño */
     height: auto; /* La altura se establece automaticamente 
                     para conforme aumente o disminuya el contenido */
@@ -19,7 +22,7 @@ main {
                                         mala practica si queremos que nuestro diseño sea   
                                         un poco mas responsivo */
     padding: 0, 0, 0, 0;
-    box-shadow: 10px 20px 30px #000000; /* Agregué sombre a la caja 
+    box-shadow: 5px 5px 20px #310000; /* Agregué sombre a la caja 
                                             principal para embellecer el diseño */
 }
 section { /* Aqui esta el contenido imagenes y texto */
@@ -52,7 +55,7 @@ img {
 
 
 #title { /* Añadiendo propiedades del titulo de la pagina */
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-top: 3px;
@@ -60,8 +63,8 @@ img {
 
 }
 #subtitle { /* añadiendo propiedades de tamaño y estilo de fuentes */
-    font-size: 25px;
-    color: whitesmoke;
+    font-size: 18px;
+    color: rgb(82, 82, 82);
     padding-left: 30px;
     justify-content: center;
     height: auto;
@@ -70,9 +73,9 @@ img {
     margin: 0;
 }
 #list { /* propiedades de texto y tamaño en la caja list */
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: initial !important; /* quitar subrayado de anchor (didn't works) */
-    color: whitesmoke;
+    color: rgb(112, 112, 112);
     padding-left: 50px; /* padding para acomodar el texto */
     padding-top: 15px;
     height: auto;
@@ -85,7 +88,7 @@ img {
 
 a {
     text-decoration: none;
-    color: whitesmoke
+    color: rgb(63, 63, 63);
     
 }
 
